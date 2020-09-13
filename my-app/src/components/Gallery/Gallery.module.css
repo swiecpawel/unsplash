@@ -1,0 +1,53 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 100px;
+  width: 900px;
+}
+.GalleryBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.Query {
+  padding-left: 10px;
+  width: 1200px;
+  font-size: xx-large;
+  justify-content: left;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .SearchBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 100px;
+    width: 400px;
+  }
+  .GalleryBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 15000px;
+  }
+  .Query {
+    padding-left: 10px;
+    width: 400px;
+    font-size: xx-large;
+    justify-content: left;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+}

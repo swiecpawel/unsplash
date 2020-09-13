@@ -1,0 +1,44 @@
+.Content {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+
+.Image {
+    width: 100%;
+    height: auto;
+}
+.ProfileBox {
+    display: flex;
+}
+
+.Profile {
+    display: flex;
+    justify-items: center;
+}
+
+
+.ProfileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.PictureInModal {
+    height: 100%;
+}
+.NameBox {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.ModalBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+}
+.Location {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}

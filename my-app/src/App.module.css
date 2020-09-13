@@ -1,0 +1,50 @@
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 95vh;
+  margin-top: 15px;
+  padding-top: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url("https://images.unsplash.com/photo-1598006844670-d8ef9bd2eed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=60");
+  background-position-y: -200px;
+}
+
+
+.WhiteText {
+  width: 630px;
+  justify-items: left;
+  font-size: large;
+  color: white;
+}
+.WhiteTextLarger {
+  margin-top: 10px;
+  width: 630px;
+  justify-items: left;
+  font-size: 55px;
+  color: white;
+}
+.SearchBar {
+  width: 630px;
+}
+
+@media only screen and (max-width: 800px) {
+  .WhiteText {
+    width: 400px;
+    justify-items: left;
+    font-size: large;
+    color: white;
+  }
+  .WhiteTextLarger {
+    margin-top: 10px;
+    width: 400px;
+    justify-items: left;
+    font-size: 55px;
+    color: white;
+  }
+  .SearchBar {
+    width: 400px;
+  }
+
+}
