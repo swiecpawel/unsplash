@@ -4,10 +4,9 @@ import Search from "../Search/Search";
 import Photo from "../Photo/Photo";
 import { useParams } from "react-router";
 import axios from "axios";
-import Masonry from 'react-masonry-css'
+import Masonry from "react-masonry-css";
 
 const Gallery: React.FC = () => {
-
   const [photos, setPhotos] = useState([]);
   let { query } = useParams();
 
@@ -36,29 +35,50 @@ const Gallery: React.FC = () => {
       <div className={style.SearchBar}>
         <Search />
       </div>
-      <div className={style.Query}>
-        {query}
-      </div>
+      <div className={style.Query}>{query}</div>
       <div className={style.GalleryBox}>
+        <div className={style.MasonryDesc}>
           <Masonry
-              breakpointCols={3}
-              className="my-masonry-grid"
-              columnClassName="my-masonry-grid_column">
-              {photos.map((p: any) => {
-                  return (
-                      <Photo
-                          key={p.id}
-                          source={p.urls.small}
-                          description={p.alt_description}
-                          id={p.id}
-                          name={p.user.name}
-                          author={p.user.profile_image.medium}
-                          bigSource={p.urls.full}
-                      />
-                  );
-              })}
+            breakpointCols={3}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            {photos.map((p: any) => {
+              return (
+                <Photo
+                  key={p.id}
+                  source={p.urls.small}
+                  description={p.alt_description}
+                  id={p.id}
+                  name={p.user.name}
+                  author={p.user.profile_image.medium}
+                  bigSource={p.urls.full}
+                />
+              );
+            })}
           </Masonry>
-
+        </div>
+        <div className={style.MasonryMobile}>
+          <Masonry
+            breakpointCols={1}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
+            {photos.map((p: any) => {
+              return (
+                <Photo
+                  key={p.id}
+                  source={p.urls.small}
+                  description={p.alt_description}
+                  id={p.id}
+                  name={p.user.name}
+                  author={p.user.profile_image.medium}
+                  bigSource={p.urls.full}
+                />
+              );
+            })}
+          </Masonry>
+        </div>
       </div>
     </div>
   );

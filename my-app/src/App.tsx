@@ -3,7 +3,6 @@ import style from "./App.module.css";
 import Search from "./components/Search/Search";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 const App: React.FC = () => {
   return (
     <div className={style.Content}>

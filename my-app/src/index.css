@@ -60,7 +60,7 @@ code {
 }
 
 .react-autosuggest__suggestions-list {
-  margin: 0px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -86,9 +86,7 @@ code {
   background-clip: padding-box;
 }
 
-
 .my-masonry-grid_column > div {
-
   margin-bottom: 30px;
 }
 @media (max-width: 800px) {

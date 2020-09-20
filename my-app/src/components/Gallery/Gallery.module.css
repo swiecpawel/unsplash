@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-items: center;
 }
 
 .SearchBar {
@@ -26,8 +25,18 @@
   font-weight: bold;
 }
 
+.MasonryMobile {
+  display: none;
+}
 
 @media only screen and (max-width: 800px) {
+  .MasonryDesc{
+    display: none;
+  }
+  .MasonryMobile{
+    display: inline;
+  }
+
   .SearchBar {
     display: flex;
     justify-content: center;

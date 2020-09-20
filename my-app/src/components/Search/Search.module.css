@@ -9,14 +9,8 @@
   width: 100%;
 }
 .Search:hover {
-  box-shadow: 0 0 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
 }
-
-.NS {
-  padding: 40px;
-  cursor: default;
-}
-
 .box {
   border: 1px solid black;
   border-radius: 3px;
